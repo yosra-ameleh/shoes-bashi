@@ -17,11 +17,193 @@ body {
     font-family: Tanha;
     background-color: #241e1e;
     overflow-x: hidden;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
+    direction: rtl;
+}
+
+/* =========================Header========================= */
+
+header.header {
+    width: 100%;
+    background-color: #141010;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+/* ---------- Right Container ---------- */
+
+.right-container {
+    display: flex;
     align-items: center;
-    text-align: center;
-    color: antiquewhite;
-    padding: 3%; */
+    justify-content: space-between;
+    width: 50%;
+}
+
+.logo {
+    width: 20%;
+    padding: 5%;
+}
+
+.logo h1 {
+    width: 100%;
+    color: #ffffff;
+    font-size: clamp(15px, 4vw, 30px);
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    width: 80%;
+    background-color: #ffffff;
+    border-radius: 1% 50px 1% 50px;
+    box-shadow: 0 4px 8px tomato;
+}
+
+.search-input {
+    width: 80%;
+}
+
+.search-input input {
+    width: 100%;
+    margin: 0 20px;
+    padding: clamp(2px, 5vw, 20px);
+    border: none;
+    outline: none;
+    font-family: Tanha;
+    font-size: clamp(15px, 1vw, 20px);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.search-button {
+    width: 20%;
+    padding: 0;
+}
+
+.search-button button {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: #ffffff00;
+    color: #6f6e6e;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+}
+
+
+/* ---------- Left Container ---------- */
+
+.left-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 50%;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    gap: 2px;
+    padding: 2%;
+}
+
+.buttons-container button {
+    padding: 10px;
+    border: none;
+    background-color: tomato;
+    font-family: Tanha;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.buttons-container button a i{
+    color: black;
+}
+
+.buttons-container button:hover {
+    background-color: #f77861;
+}
+
+
+
+/* =========================Mobile========================= */
+
+@media (max-width: 600px) {
+
+    /* Header */
+
+    .logo {
+        width: 20%;
+        padding: 2%;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-container {
+        width: 95%;
+    }
+
+    .left-container {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 1% 0;
+    }
+
+    .search-button {
+        width: 10%;
+    }
+
+    .buttons-container {
+        justify-content: space-between;
+        padding: 0.25% 30%;
+        background-color: #6f605b;
+    }
+
+    .buttons-container button {
+        background-color: #6f605b;
+    }
+
+    .buttons-container button:hover {
+        background-color: #FA5A20;
+    }
+}
+
+
+
+
+/* =========================Tablet========================= */
+
+@media (min-width: 600px) and (max-width: 950px) {
+
+    /* Header */
+
+    .logo {
+        width: 18%;
+        padding: 2%;
+    }
+
+    .right-container {
+        width: 65%;
+    }
+
+    .left-container {
+        align-items: center;
+        justify-content: center;
+        width: 35%;
+    }
 }
