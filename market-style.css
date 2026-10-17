@@ -18,6 +18,7 @@ body {
     background-color: #241e1e;
     overflow-x: hidden;
     direction: rtl;
+    width: 100%;
 }
 
 /* =========================Header========================= */
@@ -137,6 +138,57 @@ header.header {
 
 
 
+
+
+
+
+/* =========================Products Section========================= */
+
+.products-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, auto);
+    gap: 20px;
+    width: 100%;
+}
+
+.product-card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+.product-image {
+    width: 98%;
+}
+
+.product-image img{
+    width: 100%;
+}
+
+.product-price{
+    background-color: #f77861;
+    padding: 0 5%;
+    border-radius: 20px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
