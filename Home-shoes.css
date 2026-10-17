@@ -5,6 +5,7 @@
 
 * {
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 html {
@@ -128,7 +129,7 @@ header.header {
     transition: 0.5s;
 }
 
-.buttons-container button a i{
+.buttons-container button a{
     color: black;
 }
 
