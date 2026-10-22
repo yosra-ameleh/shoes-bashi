@@ -37,6 +37,227 @@ const products = {
             "Pictures/lady-shoes3.jpg",
             "Pictures/lady-shoes4.jpg"
         ]
+    },
+
+    "boot-004": {
+        name: "نیم‌بوت زنانه",
+        price: 1250000,
+        colors: ["black", "white"],
+        sizes: [38, 39, 40],
+        images: [
+            "Pictures/boot-shoes1.jpg",
+            "Pictures/boot-shoes2.jpg",
+            "Pictures/boot-shoes3.jpg",
+            "Pictures/boot-shoes4.jpg"
+        ]
+    },
+
+    "boot-005": {
+        name: "نیم‌بوت زنانه",
+        price: 1250000,
+        colors: ["black", "brown", "cream"],
+        sizes: [37, 38, 39, 40],
+        images: [
+            "Pictures/boot-shoes1.jpg",
+            "Pictures/boot-shoes2.jpg",
+            "Pictures/boot-shoes3.jpg",
+            "Pictures/boot-shoes4.jpg"
+        ]
+    },
+
+    "boot-006": {
+        name: "نیم‌بوت زنانه",
+        price: 1250000,
+        colors: ["black", "brown", "cream"],
+        sizes: [38, 39, 40],
+        images: [
+            "Pictures/boot-shoes1.jpg",
+            "Pictures/boot-shoes2.jpg",
+            "Pictures/boot-shoes3.jpg",
+            "Pictures/boot-shoes4.jpg"
+        ]
+    },
+
+    "boot-007": {
+        name: "صندل زنانه",
+        price: 1250000,
+        colors: ["black", "brown", "cream"],
+        sizes: [38, 39, 40],
+        images: [
+            "Pictures/boot-shoes1.jpg",
+            "Pictures/boot-shoes2.jpg",
+            "Pictures/boot-shoes3.jpg",
+            "Pictures/boot-shoes4.jpg"
+        ]
+    },
+
+    "boot-008": {
+        name: "صندل زنانه",
+        price: 1250000,
+        colors: ["black", "brown", "cream"],
+        sizes: [38, 39, 40],
+        images: [
+            "Pictures/lady-shoes1.webp",
+            "Pictures/lady-shoes2.jpg",
+            "Pictures/lady-shoes3.jpg",
+            "Pictures/lady-shoes4.jpg"
+        ]
+    },
+
+    "boot-009": {
+        name: "صندل زنانه",
+        price: 1250000,
+        colors: ["black", "white"],
+        sizes: [38, 39, 40],
+        images: [
+            "Pictures/boot-shoes1.jpg",
+            "Pictures/boot-shoes2.jpg",
+            "Pictures/boot-shoes3.jpg",
+            "Pictures/boot-shoes4.jpg"
+        ]
+    },
+
+    "boot-010": {
+        name: "صندل زنانه",
+        price: 1250000,
+        colors: ["black", "brown", "cream"],
+        sizes: [38, 39, 40],
+        images: [
+            "Pictures/lady-shoes1.webp",
+            "Pictures/lady-shoes2.jpg",
+            "Pictures/lady-shoes3.jpg",
+            "Pictures/lady-shoes4.jpg"
+        ]
+    },
+
+    "boot-011": {
+        name: "نیم‌بوت زنانه",
+        price: 1250000,
+        colors: ["green", "brown", "cream" , "white"],
+        sizes: [37, 38, 39, 40],
+        images: [
+            "Pictures/boot-shoes1.jpg",
+            "Pictures/boot-shoes2.jpg",
+            "Pictures/boot-shoes3.jpg",
+            "Pictures/boot-shoes4.jpg"
+        ]
+    },
+
+    "boot-012": {
+        name: "نیم‌بوت زنانه",
+        price: 1250000,
+        colors: ["black", "brown", "cream"],
+        sizes: [37, 38, 39, 40],
+        images: [
+            "Pictures/boot-shoes1.jpg",
+            "Pictures/boot-shoes2.jpg",
+            "Pictures/boot-shoes3.jpg",
+            "Pictures/boot-shoes4.jpg"
+        ]
+    },
+
+    "boot-013": {
+        name: "نیم‌بوت زنانه",
+        price: 1250000,
+        colors: ["black", "brown", "cream"],
+        sizes: [37, 38, 39, 40],
+        images: [
+            "Pictures/boot-shoes1.jpg",
+            "Pictures/boot-shoes2.jpg",
+            "Pictures/boot-shoes3.jpg",
+            "Pictures/boot-shoes4.jpg"
+        ]
+    },
+
+    "boot-014": {
+        name: "نیم‌بوت زنانه",
+        price: 1250000,
+        colors: ["green", "brown", "cream" , "white"],
+        sizes: [37, 38, 39, 40],
+        images: [
+            "Pictures/lady-shoes1.webp",
+            "Pictures/lady-shoes2.jpg",
+            "Pictures/lady-shoes3.jpg",
+            "Pictures/lady-shoes4.jpg"
+        ]
+    },
+
+    "boot-015": {
+        name: "کفش زنانه",
+        price: 1250000,
+        colors: ["black", "brown", "cream"],
+        sizes: [37, 38, 39, 40],
+        images: [
+            "Pictures/boot-shoes1.jpg",
+            "Pictures/boot-shoes2.jpg",
+            "Pictures/boot-shoes3.jpg",
+            "Pictures/boot-shoes4.jpg"
+        ]
+    },
+
+    "boot-016": {
+        name: "کفش زنانه",
+        price: 1250000,
+        colors: ["black", "brown", "cream"],
+        sizes: [37, 38, 39, 40],
+        images: [
+            "Pictures/lady-shoes1.webp",
+            "Pictures/lady-shoes2.jpg",
+            "Pictures/lady-shoes3.jpg",
+            "Pictures/lady-shoes4.jpg"
+        ]
+    },
+
+    "boot-017": {
+        name: "کفش زنانه",
+        price: 1250000,
+        colors: ["green", "brown", "cream" , "white"],
+        sizes: [37, 38, 39, 40],
+        images: [
+            "Pictures/boot-shoes1.jpg",
+            "Pictures/boot-shoes2.jpg",
+            "Pictures/boot-shoes3.jpg",
+            "Pictures/boot-shoes4.jpg"
+        ]
+    },
+
+    "boot-018": {
+        name: "کفش زنانه",
+        price: 1250000,
+        colors: ["black", "brown", "cream"],
+        sizes: [37, 38, 39, 40],
+        images: [
+            "Pictures/boot-shoes5.jpg",
+            "Pictures/boot-shoes2.jpg",
+            "Pictures/boot-shoes3.jpg",
+            "Pictures/boot-shoes4.jpg"
+        ]
+    },
+
+    "boot-019": {
+        name: "کفش زنانه",
+        price: 1250000,
+        colors: ["black", "white"],
+        sizes: [37, 38, 39, 40],
+        images: [
+            "Pictures/boot-shoes1.jpg",
+            "Pictures/boot-shoes2.jpg",
+            "Pictures/boot-shoes3.jpg",
+            "Pictures/boot-shoes7.jpg"
+        ]
+    },
+
+    "boot-020": {
+        name: "نیم‌بوت زنانه",
+        price: 1250000,
+        colors: ["black", "brown", "cream"],
+        sizes: [37, 38, 39, 40],
+        images: [
+            "Pictures/boot-shoes1.jpg",
+            "Pictures/boot-shoes5.jpg",
+            "Pictures/boot-shoes7.jpg",
+            "Pictures/boot-shoes4.jpg"
+        ]
     }
 };
 
