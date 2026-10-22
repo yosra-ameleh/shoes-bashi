@@ -41,12 +41,10 @@ const products = {
 };
 
 
-// پیدا کردن عناصر صفحه
+// نمایش اطلاعات محصولات در کارت‌ها
 const productCards = document.querySelectorAll(".product-card");
 const productDetails = document.querySelector("#product-details");
 
-
-// نمایش اطلاعات محصول در بخش جزئیات داخل صفحه
 productCards.forEach(card => {
     card.addEventListener("click", () => {
         const productId = card.dataset.productId;
@@ -82,17 +80,32 @@ productCards.forEach(card => {
 });
 
 
-// خواندن شناسه محصول از آدرس صفحه
+// دریافت شناسه محصول از آدرس صفحه
 const params = new URLSearchParams(window.location.search);
 const productId = params.get("id");
 const product = products[productId];
 
 
+// نام فارسی رنگ‌ها
+const colorNames = {
+    black: "مشکی",
+    brown: "قهوه‌ای",
+    cream: "کرم",
+    white: "سفید",
+    blue: "آبی",
+    red: "قرمز",
+    green: "سبز"
+};
+
+
 // بررسی وجود محصول
 if (!product) {
-    document.querySelector(".product-title")?.replaceChildren(
-        document.createTextNode("محصول پیدا نشد!")
-    );
+    const productTitle = document.querySelector(".product-title");
+
+    if (productTitle) {
+        productTitle.textContent = "محصول پیدا نشد!";
+    }
+
 } else {
 
     // نمایش نام محصول
@@ -102,6 +115,7 @@ if (!product) {
         productTitle.textContent = product.name;
     }
 
+
     // نمایش کد محصول
     const productCode = document.querySelector(".product-code");
 
@@ -109,48 +123,31 @@ if (!product) {
         productCode.textContent = productId;
     }
 
-    // نمایش قیمت محصول
-    const priceButton = document.querySelector(".product-price button");
 
-    if (priceButton) {
-        priceButton.textContent =
+    // نمایش قیمت در دکمه
+    const normalText = document.querySelector(".normal-text");
+
+    if (normalText) {
+        normalText.textContent =
             product.price.toLocaleString("fa-IR") + " تومان";
     }
 
 
-    // ساخت دکمه‌های رنگ
+    // ساخت دکمه‌های رنگی
     const productColors = document.querySelector(".color-options");
 
-    const colorNames = {
-        black: "مشکی",
-        brown: "قهوه‌ای",
-        cream: "کرم",
-        white: "سفید",
-        blue: "آبی",
-        red: "قرمز",
-        green: "سبز"
-    };
-
     if (productColors) {
-        productColors.innerHTML = product.colors
-            .map(color => `
-                <button
-                    type="button"
-                    class="color-btn"
-                    data-color="${color}"
-                    aria-label="${colorNames[color] || color}"
-                    title="${colorNames[color] || color}"
-                    aria-pressed="false"
-                >
-                    <span
-                        class="color-circle color-${color}"
-                    ></span>
-                    <span class="color-name">
-                        ${colorNames[color] || color}
-                    </span>
-                </button>
-            `)
-            .join("");
+        productColors.innerHTML = product.colors.map(color => `
+            <button
+                type="button"
+                class="color-btn color-${color}"
+                data-color="${color}"
+                title="${colorNames[color] || color}"
+                aria-label="${colorNames[color] || color}"
+                aria-pressed="false"
+            ></button>
+        `).join("");
+
 
         // انتخاب رنگ
         productColors.addEventListener("click", event => {
@@ -174,18 +171,17 @@ if (!product) {
     const productSizes = document.querySelector(".size-options");
 
     if (productSizes) {
-        productSizes.innerHTML = product.sizes
-            .map(size => `
-                <button
-                    type="button"
-                    class="size-btn"
-                    data-size="${size}"
-                    aria-pressed="false"
-                >
-                    ${size}
-                </button>
-            `)
-            .join("");
+        productSizes.innerHTML = product.sizes.map(size => `
+            <button
+                type="button"
+                class="size-btn"
+                data-size="${size}"
+                aria-pressed="false"
+            >
+                ${size}
+            </button>
+        `).join("");
+
 
         // انتخاب سایز
         productSizes.addEventListener("click", event => {
@@ -214,19 +210,22 @@ if (!product) {
         mainImage.alt = product.name;
     }
 
+
     // نمایش تصاویر کوچک
     thumbnails.forEach((thumbnail, index) => {
         const imageIndex = index + 1;
 
         if (product.images[imageIndex]) {
             thumbnail.src = product.images[imageIndex];
-            thumbnail.alt = `${product.name} - تصویر ${imageIndex + 1}`;
+            thumbnail.alt =
+                `${product.name} - تصویر ${imageIndex + 1}`;
+
             thumbnail.hidden = false;
         } else {
             thumbnail.hidden = true;
         }
 
-        // تغییر تصویر اصلی با کلیک
+        // تغییر تصویر اصلی با کلیک روی تصویر کوچک
         thumbnail.addEventListener("click", () => {
             if (!mainImage) return;
 
