@@ -255,12 +255,15 @@ header.header {
     box-shadow: 0 0 5px #1f1916bf;
 }
 
+.itemtitle a,
 .itemtitle,
 .lady-itemtitle {
     padding: 5px 0;
     transition: 0.3s ease-in;
+    color: white;
 }
 
+.itemtitle a:hover,
 .itemtitle:hover,
 .lady-itemtitle:hover {
     color: #ffffff5d;

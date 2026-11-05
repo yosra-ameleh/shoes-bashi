@@ -206,6 +206,13 @@ header.header {
     padding: 0 5%;
 }
 
+.about-product{
+    color: #262626;
+    font-size: 14px;
+    min-height: 40%;
+    padding: 1% 2%;
+}
+
 .product-price{
     display: flex;
     flex-direction: row;
@@ -505,6 +512,30 @@ header.header {
     .lady-itemimage {
         width: 100%;
     }
+
+
+
+    /* product */
+
+    .product-page{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        gap: 20px;
+    }
+
+    .product-gallery{
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .product-info{
+        width: 98%;
+    }
+
 }
 
 
