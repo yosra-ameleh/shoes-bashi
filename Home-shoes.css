@@ -257,7 +257,8 @@ header.header {
 
 .itemtitle a,
 .itemtitle,
-.lady-itemtitle {
+.lady-itemtitle,
+.lady-itemtitle a {
     padding: 5px 0;
     transition: 0.3s ease-in;
     color: white;
@@ -265,7 +266,8 @@ header.header {
 
 .itemtitle a:hover,
 .itemtitle:hover,
-.lady-itemtitle:hover {
+.lady-itemtitle:hover,
+.lady-itemtitle a:hover {
     color: #ffffff5d;
     cursor: pointer;
 }
